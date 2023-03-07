@@ -14,3 +14,9 @@ git commit -m"[command]"
 git push
 git fetch
 git pull //hollt die Daten von Git Hub 
+
+
+
+
+
+Mui Importante ---> exit VIM --> esc and then :wq !!!!!!!
