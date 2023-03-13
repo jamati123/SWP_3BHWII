@@ -4,8 +4,13 @@ package WichtigUndRichtig;
     
   String name; 
   String Pelzfarbe;
-  String Rasse;
-    int Alter;
+  int Alter;
+
+  public Katze(String name, String Pelzfarbe, int Alter) {
+    this.name = name;
+    this.Pelzfarbe = Pelzfarbe;
+    this.Alter = Alter;
+  }
 
 
 }
