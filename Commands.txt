@@ -5,7 +5,7 @@ cmd //öffnet die cmd in bash
 explorer .//öffnet den explorer
 ls //dateien
 git clone [license]
-mv //ändert name 
+mv OLDNAME NEWNAME // Umbenennen von datei ordner etc 
 code datei.datei //öffnet in visual studio code 
 notepad datai.datai //
 git status
