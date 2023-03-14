@@ -21,6 +21,8 @@ public class Main {
         System.out.println(katze1.name);
         System.out.println(katze1.Pelzfarbe);
         System.out.println(katze1.Alter);
+
+        sc.close();
     }
 
 }
