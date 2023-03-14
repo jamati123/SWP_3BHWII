@@ -1,4 +1,4 @@
-package WichtigUndRichtig;
+        package WichtigUndRichtig;
 import java.util.Scanner;
 
 public class Main {

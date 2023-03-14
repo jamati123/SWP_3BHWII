@@ -12,3 +12,4 @@ public Hund(String name, String Pelzfarbe, int Alter, String Rasse) {
 
     }
 }
+
