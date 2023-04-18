@@ -7,9 +7,10 @@ public class SumOfArgs {
         // Output: 15 not a numeric value
 
         int sum = 0;
-        for (int i = 0; i < args.length; i++) {
+
+        for (String arg : args) {
             try {
-                sum += Integer.parseInt(args[i]);
+                sum += Integer.parseInt(arg);
             } catch (NumberFormatException e) {
                 System.out.println("not a numeric value");
             }
