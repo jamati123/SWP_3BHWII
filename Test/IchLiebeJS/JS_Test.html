@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>JS Test</title>
+    </head>
+
+    <body>
+        <div id="inhalt"></div>
+        <button onclick="datenHolen()">Daten holen</button>
+        <button onclick="datenHolenTable()">Daten holen Table</button>
+        <script>
+            const inhhaltElement = document.getElementById("inhalt");
+           
+            
+            let a = [
+                     {vorname: "Max", nachname: "Mustermann"},
+                     {vorname: "Erika", nachname: "Mustermann"},
+                     {vorname: "Peter", nachname: "Mustermann"}            
+                    ];
+
+            function convertToHTMLlist (array) {
+                let html = "<ul>";
+                for (let i = 0; i < array.length; i++) {
+                    let row = array[i];
+                    html += "<li>" + row.vorname + " " + row.nachname + "</li>";
+                }
+                html += "</ul>";
+                return html;
+            }
+
+         //   inhhaltElement.innerHTML += convertToHTMLlist(a);
+        
+            function convertToHTMLtable (array) {
+                let html = "<table>";
+                for (let i = 0; i < array.length; i++) {
+                    let row = array[i];
+                    html += "<tr><td>" + row.vorname + "</td><td>" + row.nachname + "</td></tr>";
+                }
+                html += "</table>";
+                return html;
+            }
+            
+            function datenHolen() {
+                let a = [
+                    {vorname: "Max", nachname: "Mustermann"},
+                    {vorname: "Erika", nachname: "Mustermann"},
+                    {vorname: "Peter", nachname: "Mustermann"}            
+                   ];
+               if (inhhaltElement.innerHTML == "") {
+                   inhhaltElement.innerHTML = convertToHTMLlist(a);
+               } else {
+                   inhhaltElement.innerHTML = "";
+               }
+
+            }
+            function datenHolenTable() {
+                let a = [
+                    {vorname: "Max", nachname: "Mustermann"},
+                    {vorname: "Erika", nachname: "Mustermann"},
+                    {vorname: "Peter", nachname: "Mustermann"}            
+                   ];
+
+            console.log(a);
+               if (inhhaltElement.innerHTML == "") {
+                   inhhaltElement.innerHTML = convertToHTMLtable(a);
+               } else {
+                   inhhaltElement.innerHTML = "";
+               }
+
+            }
+            
+        </script>
+
+
+    </body>
+</html>
