@@ -33,6 +33,9 @@ public class TestArrayList {
 
     return true;
     }
+     public int get(int index) {
+         return data[index];
+     }
 
     public static void main(String[] args) {
         TestArrayList list = new TestArrayList(5);
