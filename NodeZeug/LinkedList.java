@@ -2,6 +2,7 @@ package NodeZeug;
 
 public class LinkedList {
     Node head;
+    Node tail;
     static class Node {
         int data;
         Node next;
@@ -27,6 +28,17 @@ public class LinkedList {
             }
             last.next = newNode;
         }
+        if (list.tail == null) {
+            list.tail = newNode;
+        }
+        else {
+            Node last = list.tail;
+            last.next = newNode;
+            list.tail = newNode;
+            
+        }
+
+
 
         return list;
     }
@@ -98,3 +110,4 @@ public class LinkedList {
         printList(list);
     }
 }
+
